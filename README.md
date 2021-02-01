@@ -13,11 +13,13 @@ top-level directory will be it's own self-contained project.
 This repo doesn't use versions, since each top-level directory is an
 independent exercise.
 
+## Contents
+
+* FizzBuzz
 
 
 ## Ideas 
 
-* FizzBuzz
 * Create a class
 * Create a subclass
 * Create a package for private use
