@@ -24,6 +24,10 @@ independent exercise.
 * Create a subclass
 * Create a package for private use
 * Create a package for public use
+* Command line script to process arguments
+* Command line script to process options
+* Convert between Celsius and Farenheit using functions
+* Use recursion to create the Fibonacci sequence
 
 
 
