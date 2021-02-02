@@ -11,14 +11,20 @@ class BottleSong:
     def verse(self, quantity):
         output = self.number_of_bottles(quantity) + ' on the wall\n'
         output += self.number_of_bottles(quantity) + '\n'
+        output += self.action(quantity)
+        quantity -= 1
+        output += self.number_of_bottles(quantity) + ' on the wall\n'
+
+        return output
+
+    def action(self, quantity):
+        output = ''
         if quantity == 0:
             output += 'Go to the store, buy some more\n'
         elif quantity == 1:
             output += 'take it down, pass it around\n'
         else:
             output += 'take one down, pass it around\n'
-        quantity -= 1
-        output += self.number_of_bottles(quantity) + ' on the wall\n'
 
         return output
 
