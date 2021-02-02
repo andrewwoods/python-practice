@@ -16,6 +16,7 @@ independent exercise.
 ## Contents
 
 * FizzBuzz
+* 99 Bottles
 
 
 ## Ideas 
