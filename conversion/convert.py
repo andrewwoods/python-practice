@@ -6,7 +6,7 @@
 #
 
 import argparse
-import Distance
+from Distance import Distance
 
 
 def main():
