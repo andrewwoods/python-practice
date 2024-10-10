@@ -14,21 +14,17 @@ class Distance:
 
         return mi / factor
 
-    def run(self):
-        distance = input("What distance would you like to convert? ")
-
-        if distance == "km" or distance == "kilometers":
-            amount = float(input("how many kilometers? "))
-            result = float(self.kilometers_to_miles(amount))
+    def run(self, quantity, units):
+        if units == "km" or units == "kilometers":
+            result = float(self.kilometers_to_miles(quantity))
 
             format = "Result: %0.2f %s is %0.2f miles"
-            print(format % (amount, distance, result))
+            print(format % (quantity, units, result))
             return
 
-        elif distance == "mi" or distance == "miles":
-            amount = float(input("how many miles? "))
-            result = float(self.miles_to_kilometers(amount))
+        elif units == "mi" or units == "miles":
+            result = float(self.miles_to_kilometers(quantity))
 
             format = "Result: %0.2f %s is %0.2f kilometers"
-            print(format % (amount, distance, result))
+            print(format % (quantity, units, result))
             return

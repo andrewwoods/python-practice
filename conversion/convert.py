@@ -18,6 +18,8 @@ def main():
     )
 
     parser.add_argument("type")
+    parser.add_argument("quantity")
+    parser.add_argument("units")
 
     args = parser.parse_args()
 
@@ -25,7 +27,7 @@ def main():
         parser.print_help()
     else:
         converter = get_converter(args.type)
-        converter.run()
+        converter.run(float(args.quantity), args.units)
 
 
 #
