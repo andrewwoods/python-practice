@@ -25,8 +25,6 @@ def main():
         parser.print_help()
     else:
         converter = get_converter(args.type)
-        print("Call run methond for %s class." % converter)
-        # @todo Replace this iwth converter.run()
         converter.run()
 
 
