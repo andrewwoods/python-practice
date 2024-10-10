@@ -7,6 +7,7 @@
 
 import argparse
 from Distance import Distance
+from temperature import Temperature
 
 
 def main():
@@ -40,6 +41,8 @@ def main():
 def get_converter(app_type):
     if app_type == "distance":
         return Distance()
+    elif app_type == "temperature":
+        return Temperature()
     else:
         message = "You have chosen poorly."
         message += 'Use "distance" as an argument on the command line.'
