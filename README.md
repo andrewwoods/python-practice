@@ -17,6 +17,7 @@ independent exercise.
 
 * FizzBuzz
 * 99 Bottles
+* [Conversion](conversion/README.md) - a CLI app to convert different types of values - distance, temperature
 
 
 ## Ideas 
